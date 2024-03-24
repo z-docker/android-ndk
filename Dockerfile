@@ -1,6 +1,7 @@
 FROM ghcr.io/z-docker/archlinux:multilib
+LABEL org.opencontainers.image.source = "https://github.com/z-docker/android-ndk"
 LABEL maintainer="Zero <github.com/z-nerd>" 
-LABEL description="Android ndk" 
+LABEL description="Android ndk"
 
 RUN sudo pacman-key --init && \
   sudo pacman-key --populate archlinux && \
